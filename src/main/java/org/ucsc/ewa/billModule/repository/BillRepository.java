@@ -10,6 +10,6 @@ import org.ucsc.ewa.billModule.model.BillingDetails;
 @Repository
 public interface BillRepository extends JpaRepository<BillingDetails, Long> {
 
-    @Query("select b from BillingDetails b  where b.connectionId = ?1 ")
+    @Query("select b from BillingDetails b  where b.connectionId = ?1 ORDER BY b.billDate DESC")
     public List<BillingDetails> findBillDetailsByMobileNo(Long conId);
 }

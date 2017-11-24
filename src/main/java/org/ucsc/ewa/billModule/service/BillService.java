@@ -7,5 +7,5 @@ import org.ucsc.ewa.billModule.model.cusBilldetails;
 
 public interface BillService {
 
-      cusBilldetails findBillInfoByMobileNo(String mobileNo);
+     cusBilldetails findBillInfoByMobileNo(String mobileNo);
 }
