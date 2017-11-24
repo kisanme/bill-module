@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
 --
 -- Host: localhost    Database: sc_billing_module
 -- ------------------------------------------------------
--- Server version	5.7.20-log
+-- Server version	5.7.17
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -37,6 +37,16 @@ CREATE TABLE `account_details` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `account_details`
+--
+
+LOCK TABLES `account_details` WRITE;
+/*!40000 ALTER TABLE `account_details` DISABLE KEYS */;
+INSERT INTO `account_details` VALUES (1,'Charith','Bhagya','906850784v','us@gmail.com','kalutara','kalutara','ACTIVE','2017-11-01 18:30:00.000000');
+/*!40000 ALTER TABLE `account_details` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `billing_details`
 --
 
@@ -57,6 +67,16 @@ CREATE TABLE `billing_details` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `billing_details`
+--
+
+LOCK TABLES `billing_details` WRITE;
+/*!40000 ALTER TABLE `billing_details` DISABLE KEYS */;
+INSERT INTO `billing_details` VALUES (1,1,'2017-08-31 18:30:00.000000',2300.00,'CASH','SETTLED',100.00,'2017-09-04 18:30:00.000000'),(2,1,'2017-09-30 18:30:00.000000',1490.00,'CASH','SETTLED',30.00,'2017-10-01 18:30:00.000000'),(3,1,'2017-10-31 18:30:00.000000',1598.00,'CASH','NOT SETTLED',170.00,'2017-10-31 18:30:00.000000');
+/*!40000 ALTER TABLE `billing_details` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `connection_details`
 --
 
@@ -74,6 +94,16 @@ CREATE TABLE `connection_details` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `connection_details`
+--
+
+LOCK TABLES `connection_details` WRITE;
+/*!40000 ALTER TABLE `connection_details` DISABLE KEYS */;
+INSERT INTO `connection_details` VALUES (1,1,'0718847868',170.00,'PRE','ACTIVE','2017-11-01 18:30:00.000000');
+/*!40000 ALTER TABLE `connection_details` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -84,4 +114,4 @@ CREATE TABLE `connection_details` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-03 20:18:49
+-- Dump completed on 2017-11-24 14:06:10
